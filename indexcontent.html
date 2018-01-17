@@ -2,6 +2,33 @@
  <HEADER ID="Header_Article_1">
   <H2>Building IoT Projects</H2>
 	</HEADER>
+	
+		<Section ID = "Build instructions"> 
+			<h3> Build instructions </h3> 
+			<p>  The guide i started to use but changed  alot is https://learn.adafruit.com/trainable-robotic-arm/overview i changed it to have 2 buttons per motor. 
+				Steps that i did to create the arm 
+				you will need mirco analog feedback servos , male to male wires and female to female wires.
+				1: The 3d printed parts are https://www.thingiverse.com/thing:34829
+				2: The pi has GPIO pins which 4 of them are pwm which you would set with the signal pins of the servo motor which is the 
+				yellow wire on the mirco servo. https://www.adafruit.com/product/1449 and you will need 4 of these. https://www.element14.com/community/servlet/JiveServlet/previewBody/73950-102-11-339300/pi3_gpio.png 
+				the PWM pins are 12,13,18 and 19 and after those have been assigned VIA code i used python you will than have to find 2 gpio pins for each motor one
+				to control each button. The button than moves the motor left and right 
+				3:  Once the wiring is done here is some of mine it isn't the best <img src = "wire1.jpg" alt ="wire"> and <img src = "wire2.jpg" alt = "wire2">
+				 you can than move onto the code make sure you test each motor before putting it together. 
+				4: here is my code on pastebin https://pastebin.com/CRE1zLQZ the pins i used for the motors and pwms are at the top. each are set to postion 7 so when they boot up it will be in a certain postion.
+				5: Video 
+				<video width="320" height="240">
+				<source src = "arm.mp4">
+					</p>
+	</SECTION>
+	
+	
+	
+	
+	
+	
+	
+	
 		<section ID = "Section 11"> 
 			<h3> Week 11 hardware </h3>
 			<p> I burnt out another motor after miswiring it and now i can no longer turn the arm but it will still work just cannot turn but will bend forwards and backwards as the other 
