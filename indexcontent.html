@@ -21,9 +21,10 @@
 				<li> 3:  Once the wiring is done here is some of mine it isn't the best. for the buttons i used the 3v volts from the pi aka pin 1 and for the motors the 5v pin which is pin 2.
 					The ground is pin 6 and i used a breadboard to wire mine up which may not look nice and to stop the floating 3.3 volts you can use either a pull down or up resistor i did the pull down.
 					before you test the motor make sure you have the correct wires in as the mirco servo ha 4 wires 3 are together and 1 white wire you may ignore this one. The other three must be done as follows 
-					brightest wire is the control or signal wire than the middle is power and the darkest is ground. Once you set that up test each motor and make sure they work.</li>
+					brightest wire is the control or signal wire than the middle is power and the darkest is ground. Once you set that up test each motor and make sure they work. Another thing to Make sure to connect the output pwm pins to the signal wires as shown below. 
+					The pins in A are the pwm outputs and the ones in E are the motors.</li>
 				<li> 4: Pictures: <img src = "wire1.jpg" alt ="wire" height="300" width="240"> and <img src = "wire2.jpg" alt = "wire2" height="300" width="240"> and <img src = "wire3.jpg" alt = "wire3" height="300" width="240"> and <img src = "wire4.jpg" alt = "wire4" height="300" width="240">  
-				Make sure to connect the output pwm pins to the signal wires as shown. The pins in A are the pwm outputs and the ones in E are the motors.<img src = "wire5.jpg" alt = "wire5" height="300" width "240"></li>
+				<img src = "wire5.jpg" alt = "wire5" height="300" width "240"></li>
 				 <li> 5: PINS:  i used 12,13,18,19 for the motor as those are the PWM pins than i chose 2 GPIO pins for each motor which are : 16,20; 21,5; 6,26 and 23,24. You can use any pin as long as it is a GPIO pin
 						for power i used pins 1 and 2 and ground pin 6. </li>
 				<li> 6: Video <video width="320" height="240" controls > 
