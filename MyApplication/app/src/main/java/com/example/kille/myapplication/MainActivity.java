@@ -1,6 +1,7 @@
 package com.example.kille.myapplication;
 
 import android.bluetooth.BluetoothAdapter;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -106,21 +107,18 @@ public class MainActivity extends AppCompatActivity {
         });
         connect.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (adapter == null)
-                    try {
-                        throw new Exception("No Bluetooth adapter found.");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                if (!adapter.isEnabled())
-                    try {
-                        throw new Exception("Bluetooth adapter is not enabled.");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                Intent change = new Intent(MainActivity.this, Blue.class);
+                startActivity(change);
 
 
-                    
+
+
+
+
+                /* Intent intentMain = new Intent(MainActivity.this ,
+                        Connect.class);
+                startActivity(intentMain); */
+               // add this if you wish to do java connection socket
             }
         });
 
